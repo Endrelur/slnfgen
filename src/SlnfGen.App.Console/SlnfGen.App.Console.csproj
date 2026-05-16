@@ -12,4 +12,8 @@
       <PackageReference Include="Spectre.Console.Cli" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\SlnfGen.App.Configuration\SlnfGen.App.Configuration.csproj" />
+    </ItemGroup>
+
 </Project>

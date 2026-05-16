@@ -1,3 +1,15 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using SlnfGen.App.Configuration.Commands;
+using Spectre.Console;
+using Spectre.Console.Cli;
 
-Console.WriteLine("Hello, World!");
+var app = new CommandApp();
+
+app.Configure(config =>
+{
+    config.SetApplicationName("slnfgen");
+    config.ValidateExamples();
+
+    config.AddCommand<InitConfigCommand>("init-config");
+});
+
+await app.RunAsync(args);
