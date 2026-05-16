@@ -4,6 +4,7 @@
   </Folder>
   <Folder Name="/Solution/">
     <File Path="../.gitignore" />
+    <File Path=".editorconfig" />
     <File Path="Directory.Build.Props" />
     <File Path="Directory.Packages.Props" />
   </Folder>
