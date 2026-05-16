@@ -4,4 +4,8 @@
       <PackageReference Include="Spectre.Console.Cli" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\SlnfGen.Utils\SlnfGen.Utils.csproj" />
+    </ItemGroup>
+
 </Project>

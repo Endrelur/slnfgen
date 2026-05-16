@@ -27,6 +27,9 @@ public class InitConfigCommand : Command<InitConfigCommand.Settings>
         public bool IncludeSchema { get; set; } = false;
     }
 
-    protected override int Execute(CommandContext context, Settings settings, CancellationToken cancellationToken) =>
-        throw new NotImplementedException();
+    protected override int Execute(CommandContext context, Settings settings, CancellationToken cancellationToken)
+    {
+        var result = ConfigInitializer.InitializeConfig(settings);
+        return result.Success ? 0 : (int)result.Error;
+    }
 }
