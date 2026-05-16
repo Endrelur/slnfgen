@@ -58,5 +58,4 @@ Implementation details, usage examples, and a JSON config schema will be added a
 
 ## License
 
-TBD
-
+[MIT License](LICENSE)
