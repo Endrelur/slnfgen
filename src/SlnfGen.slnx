@@ -2,6 +2,7 @@
   <Folder Name="/SlnfGen/">
     <Project Path="SlnfGen.App.Configuration/SlnfGen.App.Configuration.csproj" />
     <Project Path="SlnfGen.App.Console/SlnfGen.App.Console.csproj" />
+    <Project Path="SlnfGen.Utils/SlnfGen.Utils.csproj" />
   </Folder>
   <Folder Name="/Solution/">
     <File Path="../.gitignore" />
