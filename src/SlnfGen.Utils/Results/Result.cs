@@ -4,6 +4,11 @@ namespace SlnfGen.Utils.Results;
 
 public struct SuccessResult();
 
+public static class Result
+{
+    public static SuccessResult Success => new();
+}
+
 public class Result<TError>
 {
     protected Result(){ }
@@ -21,12 +26,6 @@ public class Result<TError>
         {
             Success = false,
             Error = error,
-        };
-    
-    public static implicit operator Result<TError>(bool success) =>
-        new()
-        {
-            Success = success,
         };
     
     public static implicit operator Result<TError>(SuccessResult _) =>
