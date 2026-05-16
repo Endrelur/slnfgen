@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/SlnfGen/">
+    <Project Path="SlnfGen.App.Console/SlnfGen.App.Console.csproj" />
+  </Folder>
+  <Folder Name="/Solution/">
+    <File Path="../.gitignore" />
+    <File Path="Directory.Build.Props" />
+    <File Path="Directory.Packages.Props" />
+  </Folder>
+</Solution>
