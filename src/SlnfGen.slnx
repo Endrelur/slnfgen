@@ -1,5 +1,6 @@
 <Solution>
   <Folder Name="/SlnfGen/">
+    <Project Path="SlnfGen.App.Configuration/SlnfGen.App.Configuration.csproj" />
     <Project Path="SlnfGen.App.Console/SlnfGen.App.Console.csproj" />
   </Folder>
   <Folder Name="/Solution/">
