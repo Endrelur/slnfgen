@@ -1,5 +1,7 @@
 ﻿using System.ComponentModel;
+using System.Text.Json.Schema;
 using Spectre.Console.Cli;
+// ReSharper disable ClassNeverInstantiated.Global
 
 namespace SlnfGen.App.Configuration.Commands;
 
@@ -19,6 +21,10 @@ public class InitConfigCommand : Command<InitConfigCommand.Settings>
         [CommandOption("-o|--output <CONFIG_PATH>")]
         [Description("Path to where the config file should be generated")]
         public string? OutputPath { get; set; }
+
+        [CommandOption("--include-schema")]
+        [Description("Include JSON schema in generated config file")]
+        public bool IncludeSchema { get; set; } = false;
     }
 
     protected override int Execute(CommandContext context, Settings settings, CancellationToken cancellationToken) =>
